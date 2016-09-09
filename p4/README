@@ -1,0 +1,2 @@
+# list shelved changelist
+p4 changes -u <user> -s shelved
