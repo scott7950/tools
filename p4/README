@@ -1,2 +1,8 @@
 # list shelved changelist
 p4 changes -u <user> -s shelved
+
+# remove shelved changelist
+p4 shelve -d -c <shelved_changelist>
+
+#unshelve a shelved changelist
+p4 unshelve -s <shelved_changelist>
