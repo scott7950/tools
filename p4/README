@@ -1,3 +1,24 @@
+# check all opened files
+p4 opened
+# check opened files in current directory
+p4 opened ...
+
+# edit a file
+p4 edit <filename>
+
+# revert a file
+p4 revert <filename>
+
+# diff a file
+p4 diff <filename>
+p4 diff <filename>#<version>
+
+# create a changelist
+p4 change
+
+#submit a changelist
+p4 submit -c <changelist>
+
 # list shelved changelist
 p4 changes -u <user> -s shelved
 
