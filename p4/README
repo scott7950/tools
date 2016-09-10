@@ -33,3 +33,6 @@ p4 edit <file1>
 p4 change # p4 change will create a changelist, e.g.: 123456
 p4 change <123456> # remove the file in changelist 123456
 p4 change -d <123456>
+
+# sync the tree to a changelist
+p4 sync @<changelist>
