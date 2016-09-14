@@ -1,0 +1,38 @@
+# check all opened files
+p4 opened
+# check opened files in current directory
+p4 opened ...
+
+# edit a file
+p4 edit <filename>
+
+# revert a file
+p4 revert <filename>
+
+# diff a file
+p4 diff <filename>
+p4 diff <filename>#<version>
+
+# create a changelist
+p4 change
+
+#submit a changelist
+p4 submit -c <changelist>
+
+# list shelved changelist
+p4 changes -u <user> -s shelved
+
+# remove shelved changelist
+p4 shelve -d -c <shelved_changelist>
+
+#unshelve a shelved changelist
+p4 unshelve -s <shelved_changelist>
+
+# remove a file from a changelist but keep the modification
+p4 edit <file1>
+p4 change # p4 change will create a changelist, e.g.: 123456
+p4 change <123456> # remove the file in changelist 123456
+p4 change -d <123456>
+
+# sync the tree to a changelist
+p4 sync @<changelist>
