@@ -1,0 +1,7 @@
+# usage of coverage generation tool
+
+urg -dir <covSrcDir> -report <destDir> -hier <hierFile> -elfile <excludeFile> [-full64] [-line nocasedef]
+
+
+
+verdi -cov -covdir <covSrcDir> -covf <file> -metric <type>
